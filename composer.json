@@ -1,0 +1,13 @@
+{
+    "name": "helpforfitness-workers/rosie",
+    "repositories": [
+		{
+	        "type": "vcs",
+	        "url": "git@github.com:helpforfitness/woocommerce-php-api-client.git"
+	    }
+    ],
+    "require":{
+    	"xero/xerooauth-php": "dev-master",
+        "stripe/stripe-php": "3.*"
+    }
+}
