@@ -1,0 +1,13 @@
+{
+	"xero": {
+		"consumer_key": "",
+		"consumer_secret": "",
+		"bank_account": "",
+		"stripe_account": "",
+		"sales_account": "",
+		"fees_account": ""
+	},
+	"stripe": {
+		"api_key": ""
+	}
+}

@@ -1,0 +1,9 @@
+runtime "php"
+
+file "composer.phar"
+file "composer.json"
+file "xero_privatekey.pem"
+file "xero_publickey.cer"
+build "php composer.phar install"
+
+exec "stripe_to_xero.php"
