@@ -2,7 +2,7 @@
 An IronWorker (http://www.iron.io/worker/) written in PHP designed to create the sales, fees and transfer transaction from Stripe in Xero. 
 Using webhooks, this worker will be executed every time a successful charge is processed or a bank transaction is made by Stripe.
 
-Disclaimer: I don’t work for Iron.io, I built this for my ecommerce and I thought would be good to share it.
+Disclaimer: I don’t work for Iron.io, I built this for my ecommerce and I thought it would be good to share it.
 
 ##Why An IronWorker?
 Every transaction on Stripe gets recorded almost instantly in your Xero account avoiding to run manual imports or batch processing enormous files. This is thanks to the webhooks provided by Stripe and the ability to trigger our IwonWorker with them. It doesn’t matter how many transactions per second we have, the worker will queue the jobs and they will get done one by one. Once we make the worker live there is no infrastructure to maintain.
@@ -22,13 +22,13 @@ To use the Xero API and interact with your books, you need create an application
 2. Select Private
 3. Complete Application Name and select your organisation 
 4. You will need to generate a public key certificate. To do this follow this steps http://developer.xero.com/documentation/advanced-docs/public-private-keypair/
-5. Once you save you are going to be able to get your consumer key and consumer secret.
+5. Once you save, you are going to be able to get your consumer key and consumer secret.
 
 ##IronWoker Setup
 1. Clone this repo
 2. Place your privatekey.pem and publickey.cer in the folder where you cloned the repo. By default I named this files xero_privatekey.pem and xero_publickey.cer, if you want to change this names you need to reflect this changes in stripe_to_xero.worker and stripe_to_xero.php
 3. Open config.json and update the file with your details
-```JSON
+```
 {
   "xero": {
     "consumer_key": "", //from your Xero private application
