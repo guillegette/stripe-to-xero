@@ -1,0 +1,10 @@
+#Composer
+vendor/
+composer.lock
+
+#Credentials
+*.pem
+*.cer
+
+#OS
+.DS_Store
