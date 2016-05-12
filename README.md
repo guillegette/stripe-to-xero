@@ -1,4 +1,6 @@
 #Stripe To Xero
+*Update:* If you are looking for a online service to automically import your sales and fees from Stripe into your Xero account, have a look at https://go.bankfeeds.io/
+
 An IronWorker (http://www.iron.io/worker/) written in PHP designed to create the sales, fees and transfer transaction from Stripe in Xero. 
 Using webhooks, this worker will be executed every time a successful charge is processed or a bank transaction is made by Stripe.
 
