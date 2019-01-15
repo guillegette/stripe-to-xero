@@ -1,5 +1,6 @@
 {
     "name": "helpforfitness-workers/rosie",
+	"test":"1,
     "repositories": [
 		{
 	        "type": "vcs",
